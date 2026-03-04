@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links para la tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Link del css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Adivina el Número</title>
+</head>
+<body>
+    <header id="encabezado">
+        <h1>⭐ ADIVINA EL NÚMERO ⭐</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+
+            <!-- Contenedor en donde sale la info del juego -->
+            <div class="juego">
+                <h2 id="temporizador">60</h2>
+                <p id="instrucción">Ayuda a la flor a encontrar el número correcto del 1-100🌷</p>
+                <p id="numerosIntento">Intentos:</p>
+                <p id="mensajeIntento">Tienes 10 oportunidades</p>
+
+                <!-- Espacio en donde el usuario ingresa el número -->
+                <input type="number" id="numero" placeholder="Escribe un número...">
+
+                <!-- Botones -->
+                <div class="botones"">
+                    <button id="boton">Intentar</button>
+                    <button id="reiniciar" class="oculto">Volver a Jugar</button>
+                </div>
+                <p id="mensaje"></p>
+            </div>
+
+            <!-- Contenedor en donde sale la imagen -->
+            <div class="imagen">
+                <img id="estado" src="img/finalBien.gif" alt="">
+            </div>
+
+            <!-- Contenedor en donde está el sonido -->
+            <div class="sonido">
+                <audio id="miSonido" src="sounds/sonido.mp3"></audio>
+                <button id="botonSonido">
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Link del js -->
+        <script src="js/script.js" defer></script>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="pie">
+        Sara Jiménez - 2026
+    </footer>
+</body>
+</html>
